@@ -63,7 +63,9 @@
         <h1 class="title-hero" data-aos="flip-left">
           Effective Solutions for Your Business
         </h1>
-        <button type="button" class="hero-button">Order Service</button>
+        <button type="button" class="hero-button" data-modal-open>
+          Order Service
+        </button>
       </section>
 
       <!--Features-->
@@ -71,7 +73,6 @@
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
-
           <ul class="list features-wrap">
             <li class="features-item">
               <h3 class="features-title">Strategy</h3>
@@ -415,9 +416,19 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
