@@ -107,6 +107,10 @@ padding-bottom: 28px;
     background-color: var(--ocean);
 }
 
+.navigation-link.current {
+    color: var(--ocean);
+}
+
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-link:active::after {
@@ -203,8 +207,7 @@ height: 51px;
 border: 1px solid var(--iris-color);
 border-radius: 4px;
 margin-top: 48px;
-transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function),
+transition: background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function); 
 }
 
@@ -422,7 +425,8 @@ margin-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: fill 250ms var(--timing-function); 
+    transition: fill 250ms var(--timing-function),
+    border 250ms var(--timing-function); 
 
 }
 
@@ -473,7 +477,7 @@ margin-bottom: 12px;
     align-items: center;
     letter-spacing: 0.04em;
     color: var(--iris-color);
-    background-color: var(--corni-flower-color);
+    background-color: var(--cloud-color);
     border: 1px solid var(--corni-flower-color);
     border-radius: 4px;
     cursor: pointer;
@@ -482,13 +486,15 @@ margin-bottom: 12px;
     padding-left: 24px;
     transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function); 
+    box-shadow 250ms var(--timing-function),
+    border-color 250ms var(--timing-function); 
 }
 
 .filter-button:hover,
 .filter-button:focus {
-background-color: var(--iris-color);
+background-color: var(--ocean);
 color: var(--white-color);
+border-color: var(--ocean);
 }
 
 .filter-button:active {
@@ -505,13 +511,13 @@ color: var(--white-color);
     column-gap: 24px;
     row-gap: 48px;
     margin-top: 72px;
-    margin-bottom: 120px;
 }
 
 .projects-item {
     width: calc((100% - 48px) / 3);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .projects-top-wrap {
@@ -698,6 +704,7 @@ color: var(--white-color);
     background-color: var(--corni-flower-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
     transition: background-color 250ms var(--timing-function);  
 }
 
